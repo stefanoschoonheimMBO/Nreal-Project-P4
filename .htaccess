@@ -1,0 +1,10 @@
+# Dit is mijn eerste .htaccess bestand. We maken hiermee de bestanden onzichtbaar
+# Alle code tussen de IfModule wordt alleen uitgevoerd als mod_rewrite aangevinkt staat
+<IfModule mod_rewrite.c>
+    # zet de rewriteengine aan
+    RewriteEngine On 
+    # stuur door naar de public map zonder tekens achter de vhost-naam
+    RewriteRule ^$ public/ [L] 
+    # stuur door naar de public map met tekens en stop deze in $1
+    RewriteRule (.*) public/$1 [L]   
+</IfModule>

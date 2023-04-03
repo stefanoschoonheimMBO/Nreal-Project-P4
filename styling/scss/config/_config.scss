@@ -1,0 +1,43 @@
+@use "sass:map";
+
+// # Make general colors map, so we can use these across multiple files
+$colors: (
+  "example": #fff,
+);
+
+@function get-color($color: false) {
+  @if $color {
+    @return map.get($colors, $color);
+  } @else {
+    @return $colors;
+  }
+}
+
+$screenSizes: (
+  "s": 576px,
+  "m": 768px,
+  "l": 992px,
+  "xl": 1200px,
+  "xxl": 1400px,
+);
+@function get-screen-size($key: false) {
+  @if $key {
+    @return map.get($screenSizes, $key);
+  } @else {
+    @return $screenSizes;
+  }
+}
+
+$containerWidths: (
+  "s": 100%,
+  "m": 95%,
+  "xl": 80%,
+);
+
+@function get-container-width($key: false) {
+  @if $key {
+    @return map.get($containerWidths, $key);
+  } @else {
+    @return $containerWidths;
+  }
+}
