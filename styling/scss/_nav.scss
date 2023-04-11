@@ -1,0 +1,43 @@
+@use "config/config";
+@use "config/util";
+
+nav {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include util.width-per-screen-size(true, true);
+    .logo {
+        font-family: "Paytone One", sans-serif;
+        font-size: 3rem;
+    }
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+        ul {
+            font-weight: 300;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: flex;
+            gap: 3rem;
+            li {
+                a {
+                    color: white;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                }
+            }
+        }
+        .login {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: .3rem 3rem;
+            border-radius: 4rem;
+            border: solid config.get-color("login-border-color") 2px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+body {
+    .bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-image: url("/assets/bg.png");
+        // aspect-ratio: 768 / 983;
+        background-size: 100%;
+    }
+}
