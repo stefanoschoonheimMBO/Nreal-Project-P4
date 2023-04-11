@@ -17,11 +17,6 @@ class BaseController
         if (file_exists('../app/models/' . $model . '.php')) {
             require_once '../app/models/' . $model . '.php';
             $newModel = new $model();
-            try {
-                $newModel->create();
-            } catch (\Throwable $th) {
-                echo $th->getMessage();
-            }
             return $newModel;
         } else {
             echo 'Model bestaat niet';
