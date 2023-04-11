@@ -10,7 +10,7 @@ class Core
     {
         $url = $this->getURL();
 
-       // var_dump($url);
+    //    var_dump($url);
 
        if (file_exists('../app/controllers/' . ucwords($url[0]) . '.php' )) {
             $this->currentController = ucwords($url[0]);

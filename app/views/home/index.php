@@ -7,6 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?= $data["page"] ?>
 </body>
 </html>
