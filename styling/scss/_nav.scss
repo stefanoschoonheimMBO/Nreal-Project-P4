@@ -1,7 +1,10 @@
 @use "config/config";
 @use "config/util";
+@use "config/media";
 
 nav {
+    font-family: "Mukta", sans-serif;
+    font-weight: normal;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
@@ -11,7 +14,10 @@ nav {
         font-family: "Paytone One", sans-serif;
         font-size: 3rem;
     }
-    div {
+    .mobile {
+        display: none;
+    }
+    div:not(.mobile) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -22,12 +28,15 @@ nav {
             padding: 0;
             list-style-type: none;
             display: flex;
-            gap: 3rem;
+            gap: 2rem;
             li {
                 a {
                     color: white;
                     font-size: 1.5rem;
                     text-decoration: none;
+                }
+                &.close {
+                    display: none;
                 }
             }
         }
@@ -38,6 +47,57 @@ nav {
             padding: .3rem 3rem;
             border-radius: 4rem;
             border: solid config.get-color("login-border-color") 2px;
+        }
+    }
+}
+
+@include media.media("l") {
+    nav {
+        .mobile {
+            display: block;
+        }
+        div:not(.mobile):not(.logo) {
+            position: fixed;
+            right: -60%;
+            top: 0;
+            width: 40vw;
+            height: 100%;
+            flex-direction: column;
+            padding: 1rem;
+            align-items: flex-end;
+            background-color: black;
+            text-align: right;
+            justify-content: flex-start;
+            gap: 5rem;
+            transition: right 300ms ease-in-out;
+            ul {
+                flex-direction: column;
+                align-items: flex-end;
+                li {
+                    &.close {
+                        margin-top: 2rem;
+                        width: 1.8rem;
+                        display: block;
+                    }
+                }
+            }
+            .login {
+                border: none;
+                padding: 0;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 10%;
+                    width: 80%;
+                    height: 2px;
+                    margin-top: -3rem;
+                    background-color: #9B9B9B;
+                    border-radius: 1px;
+                }
+            }
+            &.active {
+                right: 0;
+            }
         }
     }
 }

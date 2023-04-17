@@ -1,0 +1,7 @@
+@use './config.scss';
+
+@mixin media($screenSize) {
+    @media screen and (max-width: config.get-screen-size($screenSize)) {
+        @content;
+    }
+}

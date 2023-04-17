@@ -15,8 +15,21 @@
         <div class="logo">
             nreal
         </div>
+        <div class="mobile">
+            <svg width="46" height="22" viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L45 1" stroke="#9B9B9B" stroke-linecap="round" />
+                <path d="M15 11L45 11" stroke="#9B9B9B" stroke-linecap="round" />
+                <path d="M6 21L45 21" stroke="#9B9B9B" stroke-linecap="round" />
+            </svg>
+        </div>
         <div>
             <ul>
+                <li class="close">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L18.6868 18.337" stroke="#9B9B9B" stroke-linecap="round" />
+                        <path d="M18.7393 1L1 17.9409" stroke="#9B9B9B" stroke-linecap="round" />
+                    </svg>
+                </li>
                 <li><a href="<?= URLROOT ?>">Home</a></li>
                 <li><a href="<?= URLROOT ?>/products">Products</a></li>
                 <li><a href="<?= URLROOT ?>/contact">Contact</a></li>
@@ -26,6 +39,7 @@
             </a>
         </div>
     </nav>
+    <script src="<?= URLROOT ?>/public/js/nav.js"></script>
 
 </body>
 
