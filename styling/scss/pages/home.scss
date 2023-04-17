@@ -1,0 +1,62 @@
+@use "../config/config.scss";
+@use "../config/util.scss";
+
+
+main {
+    .eclipse {
+        position: absolute;
+        top: 18rem;
+        right: 13rem;
+        width: 32rem;
+        height: 32rem;
+        .nreal {
+            position: absolute;
+            width: 45rem;
+            height: 45rem;
+            z-index: 5;
+            top: -6rem;
+            right: -6rem;
+        }
+    }
+    .title {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Mukta";
+        font-size: 3rem;
+        font-weight: lighter;
+        text-align: left;
+        letter-spacing: 0.1rem;
+        margin-left: 12rem;
+        margin-top: 8rem;
+        .colored {
+            // mask image
+            background: url(../../../public/assets/grad.gif) no-repeat;
+            background-size: 100%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .amazon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 18rem;
+        height: 11rem;
+        margin-left: 16rem;
+        margin-top: -6rem;
+    }
+    .buy {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Mukta";
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: config.get-color("buy-color");
+    }
+}

@@ -3,7 +3,8 @@
 // # Make general colors map, so we can use these across multiple files
 $colors: (
   // * Nav bar
-  "login-border-color": #9B9B9B
+  "login-border-color": #9B9B9B,
+  "text-color": #FFFFFF,
 );
 
 @function get-color($color: false) {
