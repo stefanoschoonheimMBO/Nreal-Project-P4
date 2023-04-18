@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nreal Air</title>
     <link rel="stylesheet" href="/css/globals.css">
+    <link rel="stylesheet" href="/css/pages/products.css">
 </head>
 
 <body>
@@ -40,7 +41,22 @@
         </div>
     </nav>
     <script src="<?= URLROOT ?>/public/js/nav.js"></script>
-
+    <main>
+        <div class="banner">
+            <img src="<?= URLROOT ?>/assets/products/banner.png" alt="">
+            <div class="glass-blur"></div>
+            <div class="overlay">
+                <h1>Products</h1>
+                <div class="links">
+                    <ul>
+                        <li>Overview</li>
+                        <li>Specification</li>
+                        <li class="buy">Buy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

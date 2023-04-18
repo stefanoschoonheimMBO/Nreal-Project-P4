@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nreal</title>
     <link rel="stylesheet" href="/css/globals.css">
-    <link rel="stylesheet" href="/css/pages/home.css">
+    <link rel="stylesheet" href="public/css/pages/home.css">
 </head>
 <body>
     <div class="bg"></div>
@@ -38,7 +38,7 @@
         </div>
         <img src="/assets/amazon.png" alt="amazon" class="amazon">
         <div class="buy">
-            <a href="<?= URLROOT ?>/products">Buy</a>
+            <a href="<?= URLROOT ?>/products" class="buyButton">Buy</a>
         </div>
     </main>
 </body>
