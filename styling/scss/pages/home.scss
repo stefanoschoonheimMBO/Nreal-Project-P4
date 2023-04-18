@@ -53,11 +53,13 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: relative;
+        position: absolute;
         width: 18rem;
-        padding: 15px;
-        border: 1.8px solid config.get-color("text-color");
+        padding: 10px;
+        border: 2px solid config.get-color("text-color");
         border-radius: 50px;
+        margin-left: 34rem;
+        margin-top: -4rem;
         a {
             font-family: "Mukta";
             font-size: 1.5rem;
@@ -67,5 +69,37 @@ main {
             text-decoration: none;
             text-transform: uppercase;
         }
+    }
+    .lines {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 18rem;
+        height: 11rem;
+        margin-left: 13.5rem;
+        margin-top: 10rem;
+    }
+    .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 119.4rem;
+        height: 34rem;
+        margin-top: 38rem;
+        margin-left: 0rem;
+        background-color: config.get-color("container");
+        opacity: 80%;
+    }
+    .info-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        margin-left: 26.5rem;
+        margin-top: 50rem;
     }
 }

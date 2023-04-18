@@ -27,6 +27,10 @@ class database
         $this->statement = $this->dbHandler->prepare($sql);
     }
 
+    public function bindValue(string $param, mixed $value) {
+        $this->statement->bindValue($param, $value, PDO::PARAM_STR);
+    }
+
     public function execute()
     {
         return $this->statement->execute();
@@ -36,5 +40,11 @@ class database
     {
         $this->execute();
         return $this->statement->fetchAll(PDO::FETCH_OBJ);
+    }
+    
+    public function result()
+    {
+        $this->execute();
+        return $this->statement->fetch(PDO::FETCH_OBJ);
     }
 }

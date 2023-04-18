@@ -5,6 +5,7 @@ $colors: (
   // * Nav bar
   "login-border-color": #9B9B9B,
   "text-color": #FFFFFF,
+  "container": #323232,
 );
 
 @function get-color($color: false) {
