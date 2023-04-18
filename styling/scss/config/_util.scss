@@ -38,3 +38,21 @@
     }
   }
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar-thumb {
+  background-color: config.get-color('login-border-color');
+  border-radius: 0.5rem;
+}
+::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+::-webkit-scrollbar-button {
+  display: none;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar-corner {
+  background-color: #000000;
+}

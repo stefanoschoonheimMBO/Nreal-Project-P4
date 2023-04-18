@@ -40,6 +40,17 @@
         <div class="buy">
             <a href="<?= URLROOT ?>/products" class="buyButton">Buy</a>
         </div>
+        <div class="lines">
+            <svg width="255" height="38" viewBox="0 0 255 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="8.36166e-10" y1="1" x2="255" y2="1" stroke="#9B9B9B" stroke-width="2"/>
+                <line y1="37" x2="206" y2="37" stroke="#9B9B9B" stroke-width="2"/>
+                <line y1="19" x2="127" y2="19" stroke="#9B9B9B" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="info-container"></div>
+        <div class="info-image">
+            <img src="/assets/image 1.png" alt="image1" style="opacity: 100%">
+        </div>
     </main>
 </body>
 </html>
