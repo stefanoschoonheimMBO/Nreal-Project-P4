@@ -1,6 +1,7 @@
-@import "font";
+@use "config/config.scss";
 @import "nav";
 @import "bg";
+@import "font";
 
 body {
     margin: 0;
