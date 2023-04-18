@@ -50,13 +50,22 @@ main {
         margin-top: -6rem;
     }
     .buy {
-        padding: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "Mukta";
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: config.get-color("buy-color");
+        position: relative;
+        width: 18rem;
+        padding: 15px;
+        border: 1.8px solid config.get-color("text-color");
+        border-radius: 50px;
+        a {
+            font-family: "Mukta";
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 0.5rem;
+            color: config.get-color("text-color");
+            text-decoration: none;
+            text-transform: uppercase;
+        }
     }
 }
