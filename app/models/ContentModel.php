@@ -20,4 +20,15 @@ class ContentModel
 
         return $this->db->resultSet();
     }
+
+    public function getContentBasedOnUrl($url) {
+        $sql = "SELECT url,
+                       pageText
+                FROM   Content
+                WHERE  url = :u";
+
+        $this->db->query($sql);
+        $this->db->bindValue(":u", $url);
+        return $this->db->result();
+    }
 }
