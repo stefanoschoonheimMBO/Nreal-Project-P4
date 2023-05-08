@@ -49,14 +49,81 @@
                 <h1>Products</h1>
                 <div class="links">
                     <ul>
-                        <li>Overview</li>
-                        <li>Specification</li>
-                        <li class="buy">Buy</li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#overview">Specification</a></li>
+                        <li class="buy"><a href="#buy">Buy</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!-- <div class="glasses-img"> IF PARALAX EFFECT
+            <img src="/assets/products/nreal-removebg-preview.png" alt="">
+        </div> -->
+        <div class="specs" id="overview">
+            <div class="glasses">
+                <svg viewBox="0 0 1019 803" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1016.35 469.804C1055.23 713.737 656.773 803 468.071 803C279.37 803 0 585.796 0 445.791C0 305.787 584.067 0 772.769 0C961.47 0 970.856 184.425 1016.35 469.804Z" fill="#9B9B9B" />
+                </svg>
+                <img src="<?= URLROOT ?>/assets/products/nrealBril2 1.png" alt="">
+            </div>
+            <div class="bottom-text">
+                <h1 class="colored-text">201”</h1>
+                <p>Be blown away by a cinema-sized 201” screen.</p>
+            </div>
+            <div class="icons">
+                <img src="<?= URLROOT ?>/assets/products/icons/icon_46fov.png" alt="">
+                <img src="<?= URLROOT ?>/assets/products/icons/icon_49ppd.png" alt="">
+                <img src="<?= URLROOT ?>/assets/products/icons/icon_1080p.png" alt="">
+            </div>
+        </div>
+        <div class="down-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="#fff">
+                <path d="M480 711 240 471l43-43 197 198 197-197 43 43-240 239Z" stroke-linecap="round" />
+            </svg>
+        </div>
+        <div class="paragraph">
+            <h1 class="colored-text">Air</h1>
+            <p>Watch anytime, Anywhere</p>
+        </div>
+        <div class="buy-product" id="buy">
+            <!-- 2 cols, 1 Buy + certifications, 2 Product showcase + product info beneath -->
+            <div class="buy">
+                <a href="" class="button"><img src="/assets/products/icons/shopping-cart.svg" alt="">Add</a>
+                <div class="certs">
+                    <img src="/assets/products/icons/TUV_2.png" alt="">
+                    <img src="/assets/products/icons/TUV_1.png" alt="">
+                </div>
+            </div>
+            <div class="product">
+                <div class="carrousel">
+                    <div class="bg">
+                        <svg viewBox="0 0 1065 956" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1064.08 447C1064.08 624.56 950.997 955 796.081 955C641.165 955 -72.9193 987.5 6.08067 610C178.581 34.5 831.081 0 831.081 0C985.997 0 1064.08 269.44 1064.08 447Z" fill="#9B9B9B" />
+                        </svg>
+
+                    </div>
+                    <div class="imgs">
+                        <img src="/assets/products/nrealBrilimg.png" alt="">
+                        <img src="/assets/products/nreal-removebg-preview.png" alt="">
+                        <img src="/assets/products/nrealBril2 1.png" alt="">
+                    </div>
+                    <div class="controls">
+                        <?php
+                        for ($i = 0; $i < 3 /* Img amount */; $i++) {
+                        ?>
+                            <div class="carrousel-btn" data-index="<?= $i ?>"></div>
+                        <?php
+                        }
+                        ?>
+                    </div>
+                </div>
+                <div class="information">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, maiores?
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="/js/products/carrousel.js"></script>
 </body>
 
 </html>
