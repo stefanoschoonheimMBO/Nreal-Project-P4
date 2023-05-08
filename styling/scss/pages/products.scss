@@ -45,6 +45,10 @@ main {
                     font-family: "Mukta", sans-serif;
                     font-size: 1.3rem;
                     li {
+                        a {
+                            color: inherit;
+                            text-decoration: none;
+                        }
                         &.buy {
                             background-color: black;
                             padding: 0.1rem 1rem;
@@ -107,7 +111,123 @@ main {
         justify-content: center;
         svg {
             width: 6rem;
-            animation: down-arrow-bounce 1s infinite alternate cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            animation: down-arrow-bounce 1s infinite alternate
+                cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
+    }
+    .paragraph {
+        width: 100%;
+        text-align: center;
+        h1 {
+            font-size: 8rem;
+            line-height: 1em;
+            margin: 0;
+        }
+        p {
+            margin: 0;
+            font-size: 3rem;
+            line-height: 1em;
+        }
+    }
+    .buy-product {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .buy {
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10rem 0;
+            a.button {
+                color: white;
+                text-decoration: none;
+                font-family: "Mukta", sans-serif;
+                font-size: 3rem;
+                font-weight: 100;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                padding: 0 1rem;
+                border-radius: 3rem;
+                border: 3px white solid;
+                width: fit-content;
+                img {
+                    height: 3rem;
+                }
+            }
+            .certs {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+        .product {
+            width: 70%;
+            position: relative;
+            .bg {
+                position: absolute;
+                inset: 0;
+                top: 8rem;
+                width: 75%;
+            }
+            .carrousel {
+                width: 100%;
+                display: flex;
+                .imgs {
+                    aspect-ratio: 1;
+                    position: relative;
+                    width: 80%;
+                    aspect-ratio: 1;
+                    img {
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        position: absolute;
+                        transition: opacity 300ms ease-out;
+                        opacity: 0;
+                        &.active {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .controls {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 4rem;
+                    .carrousel-btn {
+                        width: 2rem;
+                        aspect-ratio: 1;
+                        background-image: linear-gradient(
+                            45deg,
+                            transparent,
+                            transparent,
+                            transparent
+                        );
+                        background-size: 200%;
+                        border-radius: 50%;
+                        animation: carrousel-btn 10s infinite forwards;
+                        border: 3px white solid;
+                        transition: all 2s ease-out;
+                        &.active {
+                            background-image: linear-gradient(
+                                45deg,
+                                #71d7ff,
+                                #c287ff,
+                                #71d7ff
+                            );
+                        }
+                    }
+                }
+            }
+            .information {
+                font-size: 2rem;
+            }
         }
     }
 }
@@ -117,6 +237,15 @@ main {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(2rem);        
+        transform: translateY(2rem);
+    }
+}
+
+@keyframes carrousel-btn {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 200% 200%;
     }
 }

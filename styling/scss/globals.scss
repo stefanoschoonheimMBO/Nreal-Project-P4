@@ -3,10 +3,13 @@
 @import "bg";
 @import "font";
 
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
     color: white;
     font-size: 18px;
 }
