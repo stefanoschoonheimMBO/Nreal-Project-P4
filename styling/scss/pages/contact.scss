@@ -1,0 +1,126 @@
+@use "../config/config.scss";
+@use "../config/util.scss";
+
+main {
+    .banner {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .title {
+            z-index: 2;
+            position: absolute;
+            top: 27rem;
+            left: 48.5rem;
+            font-size: 2rem;
+            text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .form {
+        background-color: config.get-color("text-color");
+        padding: 2rem;
+        width: 90rem;
+        height: 58rem;
+        position: absolute;
+        top: 55rem;
+        left: 15rem;
+        border-radius: 50px;
+        border: 2px solid config.get-color("container");
+        .info {
+            background: linear-gradient(
+                180deg,
+                rgba(79, 79, 79, 1) 5%,
+                rgba(23, 23, 23, 1) 100%
+            );
+            width: 30rem;
+            border-radius: 50px 0px 0px 50px;
+            height: 58rem;
+            position: absolute;
+            top: -0.05rem;
+            left: -0.05rem;
+            .title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                padding: 2rem;
+                color: config.get-color("text-color");
+                text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+            }
+            .desc {
+                font-size: 1.3rem;
+                font-weight: 300;
+                padding: 2rem;
+                color: config.get-color("text-color");
+                text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                margin-bottom: 8rem;
+            }
+            i {
+                font-size: 1.4rem;
+                font-weight: 000;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                margin-left: 2rem;
+                margin-right: 1rem;
+            }
+        }
+        form {
+            position: absolute;
+            padding: 2rem;
+            top: 2rem;
+            left: 31rem;
+            width: 69.5rem;
+            height: 64rem;
+            color: #000;
+            label {
+                font-family: "Mukta";
+                font-size: 2rem;
+                font-weight: 299;
+                letter-spacing: 0.2rem;
+            }
+            #i {
+                color: config.get-color("contact");
+                font-size: 1.4rem;
+                font-weight: 000;
+                margin-top: 1rem;
+                margin-bottom: 3rem;
+                border-bottom: 1px solid config.get-color("contact");
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                width: 50rem;
+                font-family: "Roboto", sans-serif;
+            }
+            #message {
+                width: 50rem;
+                height: 5rem;
+                max-width: 50rem;
+                max-height: 20rem;
+                border-bottom: 1px solid config.get-color("contact");
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                font-family: "Roboto", sans-serif;
+                font-size: 1.4rem;
+                margin-bottom: 5rem;
+            }
+            input[type="submit"] {
+                background-color: config.get-color("contact-button");
+                border: none;
+                color: config.get-color("text-color");
+                padding: 1rem 1rem;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 1.4rem;
+                font-family: "Roboto", sans-serif;
+                border-radius: 50px;
+                width: 15rem;
+                height: 3.5rem;
+                margin-left: 20rem;
+                margin-top: 2rem;
+                text-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

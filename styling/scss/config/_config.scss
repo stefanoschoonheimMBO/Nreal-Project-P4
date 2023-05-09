@@ -7,6 +7,8 @@ $colors: (
   "text-color": #FFFFFF,
   "container": #323232,
   "button": #9B9B9B,
+  "contact": #D2D2D2,
+  "contact-button": #212A5A,
 );
 
 @function get-color($color: false) {
