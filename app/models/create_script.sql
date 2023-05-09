@@ -20,3 +20,11 @@ create table if not exists Content
 
 INSERT INTO Content (url, pageText)
 VALUES ('example', 'Dit is een example pagina');
+
+drop table if exists Users;
+
+create table if not exists Users (
+	id			tinyint		unsigned PRIMARY KEY auto_increment,
+    email		VARCHAR(255),
+    passwords	VARCHAR(255)
+);
