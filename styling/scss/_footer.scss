@@ -1,0 +1,68 @@
+@use "config/config";
+@use "config/util";
+@use "config/media";
+
+@mixin mask-image($url) {
+    mask-image: url($url);
+    -webkit-mask-image: url($url);
+}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    .begin {
+        display: flex;
+        gap: 2rem;
+        margin: 2rem;
+        div {
+            h1 {
+                font-family: "Mukta", sans-serif;
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .end {
+        margin: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        .copyright {
+            font-size: 1.4rem;
+            color: #bdbdbd;
+        }
+        .icons {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            div {
+                font-size: 3rem;
+                width: 1em;
+                height: 1.1em;
+                aspect-ratio: 1/1;
+                background-repeat: no-repeat;
+                background-color: #ad9cff;
+                -webkit-mask-repeat: no-repeat;
+                mask-repeat: no-repeat;
+                mask-size: 100%;
+                -webkit-mask-size: 100%;
+                &.github {
+                    @include mask-image("/assets/github.svg");
+                }
+                &.discord {
+                    @include mask-image("/assets/discord.svg");
+                }
+                &.linkedin {
+                    @include mask-image("/assets/linkedin.svg");
+                }
+            }
+        }
+    }
+}
