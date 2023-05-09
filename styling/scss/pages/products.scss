@@ -177,6 +177,7 @@ main {
             .carrousel {
                 width: 100%;
                 display: flex;
+                padding-bottom: 3rem;
                 .imgs {
                     aspect-ratio: 1;
                     position: relative;
@@ -227,6 +228,7 @@ main {
             }
             .information {
                 font-size: 2rem;
+                margin-bottom: 2rem;
             }
         }
     }
