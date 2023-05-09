@@ -102,4 +102,66 @@ main {
         margin-left: 26.5rem;
         margin-top: 50rem;
     }
+    .info-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        width: 30rem;
+        position: absolute;
+        right: 25rem;
+        top: 85rem;
+        p {
+            width: 50rem;
+        }
+    }
+    .explore {
+        background-color: config.get-color("button");
+        border-radius: 50px;
+        padding: 10px;
+        width: 15rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 40rem;
+        top: 108rem;
+        font-family: "Mukta";
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 0.5rem;
+        color: config.get-color("text-color");
+        text-decoration: none;
+        text-transform: uppercase;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+    .info-design {
+        width: 6rem;
+        height: 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        position: absolute;
+        left: 0;
+        top: 96rem;
+        svg {
+            position: absolute;
+            left: 0.8rem;
+            top: -10rem;
+        }
+        .barcode {
+            font-family: "Libre Barcode 128";
+            font-size: 8rem;
+            color: config.get-color("text-color");
+            text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+            display: inline-block;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            position: absolute;
+            left: -3rem;
+        }
+    }
 }

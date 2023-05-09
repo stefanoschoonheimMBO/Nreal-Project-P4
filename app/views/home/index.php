@@ -51,6 +51,51 @@
         <div class="info-image">
             <img src="/assets/image 1.png" alt="image1" style="opacity: 100%">
         </div>
+        <div class="info-content">
+            <h1>What is nreal?</h1>
+            <p>
+                Nreal is a cutting-edge technology company that specializes in creating high-quality, mixed reality devices. Founded in 2017 by a team of seasoned professionals with extensive experience in the fields of computer vision, graphics, and mobile device technology, Nreal is committed to delivering a next-generation mixed reality experience that is both accessible and immersive.
+                <br>
+                <br>
+                Nreal is dedicated to pushing the boundaries of mixed reality technology and is committed to developing innovative products that empower users to explore new dimensions of digital interaction. With a team of talented and passionate engineers, designers, and visionaries, Nreal is poised to be a leader in the rapidly-evolving mixed reality market for years to come.
+            </p>
+        </div>
+        <div class="exploreButton">
+            <a href="<?= URLROOT ?>/products" class="explore">Explore</a>
+        </div>
+        <div class="info-design">
+            <svg width="56" height="52" viewBox="0 0 56 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_106_3)">
+                <path d="M49 3L6.99999 41.4945" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                </g>
+                <g filter="url(#filter1_d_106_3)">
+                <path d="M7 3L49 41" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_106_3" x="0.5" y="0.5" width="55" height="51.4945" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_3"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_3" result="shape"/>
+                </filter>
+                <filter id="filter1_d_106_3" x="0.5" y="0.5" width="55" height="51" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_3"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_3" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+            <span class="barcode">Barcode</span>
+        </div>
     </main>
 </body>
 </html>
