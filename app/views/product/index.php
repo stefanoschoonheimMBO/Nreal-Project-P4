@@ -8,7 +8,7 @@
     <title>Nreal Air</title>
     <link rel="stylesheet" href="/css/globals.css">
     <link rel="stylesheet" href="/css/pages/products.css">
-</head>
+    </head`>
 
 <body>
     <div class="bg"></div>
@@ -39,7 +39,7 @@
                 Login
             </a>
         </div>
-    </nav>
+    </nav>`
     <script src="<?= URLROOT ?>/public/js/nav.js"></script>
     <main>
         <div class="banner">

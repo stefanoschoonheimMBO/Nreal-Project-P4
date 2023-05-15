@@ -13,5 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.60.0"
+  },
+  "dependencies": {
+    "@tiptap/core": "^2.0.3",
+    "@tiptap/pm": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3"
   }
 }

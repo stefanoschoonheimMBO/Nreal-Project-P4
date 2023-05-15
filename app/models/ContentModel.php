@@ -21,7 +21,8 @@ class ContentModel
         return $this->db->resultSet();
     }
 
-    public function getContentBasedOnUrl($url) {
+    public function getContentBasedOnUrl($url)
+    {
         $sql = "SELECT url,
                        pageText
                 FROM   Content
@@ -29,6 +30,24 @@ class ContentModel
 
         $this->db->query($sql);
         $this->db->bindValue(":u", $url);
+        return $this->db->result();
+    }
+    public function createContent($url, $data)
+    {
+        $sql = "INSERT INTO Content (url, pageText) VALUES (:url, :pgtxt)";
+        $this->db->query($sql);
+        $this->db->bindValue(':url', $url);
+        $this->db->bindValue(':pgtxt', $data);
+        return $this->db->result();
+    }
+    public function updateContent($url, $data)
+    {
+        $sql = "UPDATE Content
+                SET pageText=:pgtxt
+                WHERE url=:url";
+        $this->db->query($sql);
+        $this->db->bindValue(":pgtxt", $data);
+        $this->db->bindValue(":url", $url);
         return $this->db->result();
     }
 }

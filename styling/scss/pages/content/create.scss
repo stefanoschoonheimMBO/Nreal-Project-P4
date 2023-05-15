@@ -1,0 +1,52 @@
+@use "../../config/config";
+@use "../../config/util";
+@use "../../config/media";
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 100%;
+    flex: 1;
+    @include util.width-per-screen-size(true, true);
+    display: flex;
+    flex-direction: column;
+    .editor {
+        background-color: #ffffff30;
+        border-radius: 2rem;
+        padding: 1rem;
+        height: 100%;
+        flex: 1;
+        margin-bottom: 1rem;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            .begin {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+        button {
+            background-color: white;
+            font-size: 1.2rem;
+            padding: 0.25em 1em;
+            border-radius: 0.3rem;
+            border: 2px white solid;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            input {
+                font-size: 1rem;
+            }
+            &.bold {
+                font-weight: bold;
+            }
+            &.italic {
+                font-style: italic;
+            }
+        }
+    }
+}
