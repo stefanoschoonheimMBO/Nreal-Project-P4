@@ -1,5 +1,6 @@
 @use "../config/config.scss";
 @use "../config/util.scss";
+@use "../config/media.scss";
 
 main {
     .banner {
@@ -90,12 +91,22 @@ main {
                 border-right: none;
                 width: 50rem;
                 font-family: "Roboto", sans-serif;
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid config.get-color("contact");
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    &::-webkit-input-placeholder {
+                        color: transparent;
+                    }
+                }
             }
             #message {
                 width: 50rem;
                 height: 5rem;
                 max-width: 50rem;
-                max-height: 20rem;
+                max-height: 9rem;
                 border-bottom: 1px solid config.get-color("contact");
                 border-top: none;
                 border-left: none;
@@ -103,6 +114,16 @@ main {
                 font-family: "Roboto", sans-serif;
                 font-size: 1.4rem;
                 margin-bottom: 5rem;
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid config.get-color("contact");
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    &::-webkit-input-placeholder {
+                        color: transparent;
+                    }
+                }
             }
             input[type="submit"] {
                 background-color: config.get-color("contact-button");
@@ -123,4 +144,12 @@ main {
             }
         }
     }
+}
+footer {
+    position: absolute;
+    top: 118rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
