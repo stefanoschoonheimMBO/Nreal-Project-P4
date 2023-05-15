@@ -1,8 +1,9 @@
 @use "../config/config.scss";
 @use "../config/util.scss";
-
+@use "../config/media.scss";
 
 main {
+    flex: 1;
     .eclipse {
         position: absolute;
         top: 18rem;
@@ -164,4 +165,12 @@ main {
             left: -3rem;
         }
     }
+}
+footer {
+    position: absolute;
+    top: 125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }

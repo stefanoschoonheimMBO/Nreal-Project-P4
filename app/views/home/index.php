@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nreal</title>
+    <title>Nreal Air</title>
     <link rel="stylesheet" href="/css/globals.css">
     <link rel="stylesheet" href="public/css/pages/home.css">
 </head>
@@ -97,5 +97,35 @@
             <span class="barcode">Barcode</span>
         </div>
     </main>
+    <footer>
+        <div class="begin">
+            <div>
+                <h1>Support & Service</h1>
+                <ul>
+                    <li>Support</li>
+                    <li>Nreal subreddit</li>
+                    <li>Terms of sale</li>
+                </ul>
+            </div>
+            <div>
+                <h1>About</h1>
+                <ul>
+                    <li>Specifications</li>
+                    <li>FAQ</li>
+                    <li>News</li>
+                </ul>
+            </div>
+        </div>
+        <div class="end">
+            <div class="copyright">
+                © Nreal Project, P4
+            </div>
+            <div class="icons">
+                <div class="linkedin"></div>
+                <div class="discord"></div>
+                <div class="github"></div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
