@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +10,9 @@
     <link rel="stylesheet" href="public/css/pages/contact.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-<div class="bg"></div>
+    <div class="bg"></div>
     <nav>
         <div class="logo">
             nreal
@@ -48,15 +50,20 @@
                     <span id="location">Zhongguancun, the Silicon Valley of Beijing.</span>
                 </div>
             </div>
-            <form>
+            <form action="" method="post">
+                <?php
+                if (array_key_exists("created", $data)) {
+                    echo "<h1>Bericht is verstuurd!</h1>";
+                }
+                ?>
                 <label for="name">Name</label><br>
-                <input type="text" id="i" name="fname" placeholder="Your first and last name."><br>
+                <input required type="text" id="i" name="name" placeholder="Your first and last name."><br>
                 <label for="subject">Subject</label><br>
-                <input type="text" id="i" name="lname" placeholder="Subject of your message."><br>
+                <input required type="text" id="i" name="subject" placeholder="Subject of your message."><br>
                 <label for="message">Message</label><br>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type here your message..."></textarea><br>
+                <textarea required name="message" id="message" cols="30" rows="10" placeholder="Type here your message..."></textarea><br>
                 <label for="email">Keep in touch with Nreal!</label><br>
-                <input type="email" id="i" name="email" placeholder="Your e-mail"><br><br>
+                <input required type="email" id="i" name="email" placeholder="Your e-mail"><br><br>
                 <input type="checkbox" id="check" name="checkbox"><span>Please notify me for news updates.</span>
                 <input type="submit" value="Send Message" id="submit">
             </form>
@@ -93,4 +100,5 @@
         </div>
     </footer>
 </body>
+
 </html>
