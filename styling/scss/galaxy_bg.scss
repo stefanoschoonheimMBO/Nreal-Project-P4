@@ -1,0 +1,62 @@
+:root {
+    --color: rgba(0, 0, 0, 0);
+    --pos-x: 0%;
+    --pos-y: 0%;
+    --size: 1;
+    --sped: 20s;
+}
+
+.bg-galaxy {
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right,
+        black,
+        rgb(23, 23, 72) 30%,
+        rgb(23, 23, 72) 70%,
+        black
+    );
+    .layer {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        animation: anim-top var(--sped) infinite linear;
+
+        .star {
+            position: absolute;
+            left: var(--pos-x);
+            top: var(--pos-y);
+            background-color: var(--color);
+            width: calc(1px * var(--size));
+            height: calc(1px * var(--size));
+            border-radius: 50%;
+        }
+        &:nth-child(even) {
+            top: 100%;
+            animation-name: anim-bottom;
+        }
+    }
+}
+
+@keyframes anim-bottom {
+    from {
+        top: 100%;
+    }
+    to {
+        top: -100%;
+    }
+}
+@keyframes anim-top {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100%;
+    }
+}
