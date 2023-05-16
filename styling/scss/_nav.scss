@@ -34,6 +34,10 @@ nav {
                     color: white;
                     font-size: 1.5rem;
                     text-decoration: none;
+                    &:hover {
+                        color: config.get-color("contact");
+                        transition: 0.2s;
+                    }
                 }
                 &.close {
                     display: none;
@@ -47,6 +51,10 @@ nav {
             padding: .3rem 3rem;
             border-radius: 4rem;
             border: solid config.get-color("login-border-color") 2px;
+            &:hover {
+                background-color: config.get-color("container");
+                transition: 0.5s;
+            }
         }
     }
 }

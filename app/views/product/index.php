@@ -49,8 +49,8 @@
                 <h1>Products</h1>
                 <div class="links">
                     <ul>
-                        <li><a href="#overview">Overview</a></li>
-                        <li><a href="#overview">Specification</a></li>
+                        <li><a href="#overview" id="txt">Overview</a></li>
+                        <li><a href="#overview" id="txt">Specification</a></li>
                         <li class="buy"><a href="#buy">Buy</a></li>
                     </ul>
                 </div>
@@ -103,9 +103,9 @@
 
                     </div>
                     <div class="imgs">
-                        <img src="/assets/products/nrealBrilimg.png" alt="">
-                        <img src="/assets/products/nreal-removebg-preview.png" alt="">
-                        <img src="/assets/products/nrealBril2 1.png" alt="">
+                        <img src="/assets/products/nrealFront.png" alt="">
+                        <img src="/assets/products/nrealBack.png" alt="">
+                        <img src="/assets/products/nrealPack.png" alt="">
                     </div>
                     <div class="controls">
                         <?php
@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="information">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, maiores?
+                Innovative spring hinge system for up to 40° of flexibility and comfort for all head sizes. 
                 </div>
             </div>
         </div>
