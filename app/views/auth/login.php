@@ -18,6 +18,9 @@
     <a href="/" class="home"><- Back</a>
         <form action="/auth/login" method="post">
           <h1>Login</h1>
+          <?php if (!$data["success"]) { ?>
+            <p>Either password or email wasn't correct</p>
+          <?php } ?>
           <label for="email">E-mail</label>
           <input type="email" name="email" id="email" placeholder="Type your email">
           <label for="password">Password</label>

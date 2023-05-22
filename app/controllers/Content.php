@@ -30,12 +30,20 @@ class Content extends BaseController
     }
     public function create()
     {
+        if (!authenticated) {
+            header("Location: " . URLROOT);
+            die();
+        }
         $data = ["create" => true, "url" => "", "data" => ""];
         $this->view('content/create', $data);
     }
 
     public function update($url = null)
     {
+        if (!authenticated) {
+            header("Location: " . URLROOT);
+            die();
+        }
         $result = $this->ContentModel->getContentBasedOnUrl($url);
         if (!$result) {
             //temperory double code (ErrorController.php)
@@ -48,5 +56,17 @@ class Content extends BaseController
         }
         $data = ["create" => false, "url" => $url, "data" => $result->pageText];
         $this->view('content/create', $data);
+    }
+    public function list()
+    {
+        if (!authenticated) {
+            header("Location: " . URLROOT);
+            die();
+        }
+        $result = $this->ContentModel->getAllContent();
+        $data = [
+            "data" => $result
+        ];
+        $this->view("content/list", $data);
     }
 }

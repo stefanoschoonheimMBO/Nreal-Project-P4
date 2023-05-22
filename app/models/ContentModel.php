@@ -50,4 +50,13 @@ class ContentModel
         $this->db->bindValue(":url", $url);
         return $this->db->result();
     }
+    public function getAllContent()
+    {
+        $sql = "SELECT url,
+                       pageText
+                FROM   Content";
+
+        $this->db->query($sql);
+        return $this->db->resultSet();
+    }
 }
