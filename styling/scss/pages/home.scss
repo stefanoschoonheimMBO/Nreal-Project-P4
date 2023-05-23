@@ -182,3 +182,43 @@ footer {
     align-items: center;
     width: 100%;
 }
+@media screen and (max-width: config.get-screen-size("s")) {
+    main {
+        flex: 1;
+        .eclipse {
+            position: absolute;
+            top: 18rem;
+            left: 37rem;
+            width: 32rem;
+            height: 32rem;
+            .nreal {
+                position: absolute;
+                width: 45rem;
+                height: 45rem;
+                z-index: 5;
+                top: -6rem;
+                right: -6rem;
+            }
+        }
+        .title {
+            padding: 2rem;
+            display: flex;
+            flex-direction: space-between;
+            justify-content: center;
+            align-items: center;
+            margin-top: -2rem;
+        }
+    }
+}
+@media screen and (max-width: config.get-screen-size("m")) {
+    
+}
+@media screen and (max-width: config.get-screen-size("l")) {
+    
+}
+@media screen and (max-width: config.get-screen-size("xl")) {
+    
+}
+@media screen and (max-width: config.get-screen-size("xxl")) {
+    
+}

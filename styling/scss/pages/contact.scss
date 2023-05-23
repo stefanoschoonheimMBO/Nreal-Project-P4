@@ -147,6 +147,9 @@ main {
                     transition: 1.2s ease;
                 }
             }
+            input[type="checkbox"]{
+                accent-color: config.get-color("contact-button");
+            }
         }
     }
 }

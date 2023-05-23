@@ -39,7 +39,7 @@
                 Login
             </a>
         </div>
-    </nav>`
+    </nav>
     <script src="<?= URLROOT ?>/public/js/nav.js"></script>
     <main>
         <div class="banner">
