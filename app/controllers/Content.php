@@ -59,13 +59,10 @@ class Content extends BaseController
     }
     public function list()
     {
-        if (!authenticated) {
-            header("Location: " . URLROOT);
-            die();
-        }
         $result = $this->ContentModel->getAllContent();
         $data = [
-            "data" => $result
+            "data" => $result,
+            "update" => authenticated ? "update/" : "index/"
         ];
         $this->view("content/list", $data);
     }

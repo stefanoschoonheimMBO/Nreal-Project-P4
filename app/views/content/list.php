@@ -42,14 +42,21 @@
     </nav>
     <script src="<?= URLROOT ?>/public/js/nav.js"></script>
     <main>
-        <ul>
-            <?php foreach ($data["data"] as $value) { ?>
-                <li><a href="<?= URLROOT ?>/content/update/<?= $value->url ?>"><?= $value->url ?></a></li>
-            <?php } ?>
-        </ul>
+        <div>
+            <a href="<?= URLROOT ?>" class="back"><- Go back</a>
+                    <h1>Overview</h1>
+                    <ul>
+                        <?php foreach ($data["data"] as $value) { ?>
+                            <li><a href="<?= URLROOT ?>/content/<?= $data["update"] ?><?= $value->url ?>"><?= $value->url ?></a></li>
+                        <?php } ?>
+                    </ul>
+        </div>
+        <div>
+            <img src="<?= URLROOT ?>/assets/content/list.svg" alt="">
+        </div>
     </main>
     <footer>
-        <div class="begin">
+        <div class=" begin">
             <div>
                 <h1>Support & Service</h1>
                 <ul>
